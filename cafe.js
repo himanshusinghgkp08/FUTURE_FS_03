@@ -37,7 +37,6 @@
                 }
             });
         }
-
         // Modal Controls
         function openOrderModal(name, price) {
             document.getElementById('modal-item-name').innerText = `${name} - ₹${price}`;
