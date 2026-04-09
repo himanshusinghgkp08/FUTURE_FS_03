@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Grind | Artisan Coffee & Community</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="cafe.css">
+</head>
+
+<body class="bg-stone-50 text-stone-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <span class="text-2xl font-bold text-orange-900 tracking-tighter uppercase">The Daily Grind</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8 text-sm font-medium uppercase tracking-wider">
+                        <a href="#home" class="hover:text-orange-700 transition-colors">Home</a>
+                        <a href="#about" class="hover:text-orange-700 transition-colors">Our Story</a>
+                        <a href="#menu" class="hover:text-orange-700 transition-colors">Menu</a>
+                        <a href="#contact"
+                            class="bg-orange-900 text-white px-6 py-2 rounded-full hover:bg-orange-800 transition-all shadow-md">Visit
+                            Us</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-stone-700 p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200 px-4 py-6 space-y-4 shadow-xl">
+            <a href="#home" class="block text-lg font-medium">Home</a>
+            <a href="#about" class="block text-lg font-medium">Our Story</a>
+            <a href="#menu" class="block text-lg font-medium">Menu</a>
+            <a href="#contact" class="block text-lg font-medium text-orange-700">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen coffee-gradient flex items-center justify-center text-center px-4">
+        <div class="max-w-3xl text-white">
+            <h1 class="text-5xl md:text-7xl mb-6 leading-tight">Your Daily Dose of Craft & Community</h1>
+            <p class="text-xl md:text-2xl mb-10 font-light opacity-90 italic text-stone-200">Locally roasted beans &
+                freshly made bites.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#menu"
+                    class="bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-500 transition-all transform hover:scale-105 shadow-lg">Order
+                    Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="about" class="py-24 px-4 bg-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                    alt="Coffee Pour" class="rounded-2xl shadow-2xl">
+                <div
+                    class="absolute -bottom-8 -right-8 bg-orange-900 text-white p-8 rounded-2xl hidden lg:block shadow-xl">
+                    <p class="text-3xl font-bold">14+</p>
+                    <p class="text-sm uppercase tracking-widest opacity-80">Years of Brewing</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-4xl md:text-5xl mb-8 text-stone-900">More than just a cup of coffee.</h2>
+                <p class="text-lg text-stone-600 mb-6 leading-relaxed">
+                    Founded in 2012, <strong>The Daily Grind</strong> started with a simple mission: to bring ethically
+                    sourced, small-batch roasted coffee to our neighborhood. We believe the best conversations happen
+                    over a warm mug and that a cafe should be the heartbeat of its community.
+                </p>
+                <div class="grid grid-cols-2 gap-8 mt-12">
+                    <div>
+                        <i class="fa-solid fa-leaf text-orange-700 text-3xl mb-4"></i>
+                        <h4 class="font-bold mb-2">Ethically Sourced</h4>
+                        <p class="text-sm text-stone-500">We work directly with farmers to ensure fair pay and
+                            sustainable practices.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-mug-hot text-orange-700 text-3xl mb-4"></i>
+                        <h4 class="font-bold mb-2">Master Roasters</h4>
+                        <p class="text-sm text-stone-500">Beans are roasted daily in small batches to lock in full
+                            flavor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-24 px-4 bg-stone-100">
+        <div class="max-w-5xl mx-auto text-center mb-16">
+            <h2 class="text-4xl md:text-5xl mb-4 text-orange-950">Our Selection</h2>
+            <p class="text-stone-500 italic">Hand-crafted favorites. Click an item to place an order.</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-x-16 gap-y-12">
+            <!-- Category: Hot Beverages -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm">
+                <h3
+                    class="text-2xl font-bold mb-6 text-orange-900 border-b-2 border-orange-100 pb-2 flex items-center gap-3">
+                    <i class="fa-solid fa-mug-hot"></i> Hot Beverages
+                </h3>
+                <div class="space-y-4" id="hot-menu"></div>
+            </div>
+
+            <!-- Category: Cold Beverages -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm">
+                <h3
+                    class="text-2xl font-bold mb-6 text-orange-900 border-b-2 border-orange-100 pb-2 flex items-center gap-3">
+                    <i class="fa-solid fa-glass-water"></i> Cold Beverages
+                </h3>
+                <div class="space-y-4" id="cold-menu"></div>
+            </div>
+
+            <!-- Category: Snacks -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm">
+                <h3
+                    class="text-2xl font-bold mb-6 text-orange-900 border-b-2 border-orange-100 pb-2 flex items-center gap-3">
+                    <i class="fa-solid fa-utensils"></i> Snacks & Quick Bites
+                </h3>
+                <div class="space-y-4" id="snacks-menu"></div>
+            </div>
+
+            <!-- Category: Desserts -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm">
+                <h3
+                    class="text-2xl font-bold mb-6 text-orange-900 border-b-2 border-orange-100 pb-2 flex items-center gap-3">
+                    <i class="fa-solid fa-cake-candles"></i> Desserts
+                </h3>
+                <div class="space-y-4" id="dessert-menu"></div>
+            </div>
+        </div>
+
+        <!-- Download Menu Button -->
+        <div class="text-center mt-20">
+            <div class="inline-block p-8 bg-white rounded-3xl border border-stone-200 shadow-sm max-w-sm w-full">
+                <h4 class="text-xl font-bold mb-2">Full Menu</h4>
+                <p class="text-stone-500 text-sm mb-6">Take our full list of offerings with you.</p>
+                <button onclick="simulateDownload()"
+                    class="w-full inline-flex items-center justify-center gap-2 bg-orange-900 text-white px-8 py-4 rounded-full font-bold hover:bg-stone-800 transition-all shadow-md active:scale-95">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    Download PDF Menu
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit & Connect Section -->
+    <section id="contact" class="py-24 px-4 bg-stone-900 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl mb-4 text-white">Visit & Connect</h2>
+                <p class="text-stone-400 italic">Stop by for a brew or drop us a line</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-stretch">
+                <!-- Location Info & Map -->
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 shadow-xl flex flex-col">
+                    <h3 class="text-2xl font-bold mb-8 text-orange-500">Find Us</h3>
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-location-dot text-orange-400 text-xl mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-lg">Address</p>
+                                <p class="text-stone-400">123 Artisan Alley, Coffee District<br>Delhi, India 11201</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-clock text-orange-400 text-xl mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-lg">Hours</p>
+                                <p class="text-stone-400">Mon - Fri: 7:00 AM - 6:00 PM<br>Sat - Sun: 8:00 AM - 5:00 PM
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-grow h-64 rounded-xl overflow-hidden border border-white/10 relative">
+                        <iframe
+                            class="w-full h-full border-0 grayscale opacity-80 hover:grayscale-0 transition-all duration-500"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-73.98796772421501!3d40.70182117139364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a30e1d87f13%3A0x14066f1f62b7e51f!2sDUMBO%2C%20Brooklyn%2C%20NY!5e0!3m2!1sen!2sus!4v1710000000000"
+                            allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank"
+                        class="mt-6 inline-block w-full text-center bg-orange-600 text-white font-bold py-3 rounded-xl hover:bg-orange-500 transition-colors">
+                        Get Directions
+                    </a>
+                </div>
+
+                <!-- Message Form -->
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 shadow-xl">
+                    <h3 class="text-2xl font-bold mb-8 text-orange-500">Send a Message</h3>
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-stone-400 mb-2">Your Name</label>
+                            <input type="text" id="contactName" placeholder="Full Name" required
+                                class="w-full bg-stone-800 border border-white/10 rounded-lg p-3 text-white focus:border-orange-500 outline-none transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-stone-400 mb-2">Email Address</label>
+                            <input type="email" placeholder="hello@example.com" required
+                                class="w-full bg-stone-800 border border-white/10 rounded-lg p-3 text-white focus:border-orange-500 outline-none transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-stone-400 mb-2">Your Message</label>
+                            <textarea rows="5" id="contactMessage" placeholder="How can we help?" required
+                                class="w-full bg-stone-800 border border-white/10 rounded-lg p-3 text-white focus:border-orange-500 outline-none transition-all"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-white text-orange-900 font-bold py-4 rounded-xl hover:bg-stone-200 transition-all transform active:scale-95 shadow-lg">
+                            Submit Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-stone-950 text-stone-500 text-center border-t border-white/5">
+        <div class="flex justify-center gap-6 mb-8 text-2xl">
+            <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <p class="text-sm tracking-widest uppercase">&copy;The Daily Grind Coffee Co.</p>
+    </footer>
+
+    <!-- Order Modal -->
+    <div id="order-modal" class="fixed inset-0 bg-black/60 z-[100] hidden items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-8 relative shadow-2xl">
+            <button onclick="closeModal()"
+                class="absolute top-5 right-5 text-stone-400 hover:text-stone-900 transition-colors">
+                <i class="fa-solid fa-circle-xmark text-3xl"></i>
+            </button>
+            <h3 class="text-2xl font-bold mb-2">Place Your Order</h3>
+            <p id="modal-item-name" class="text-orange-700 font-semibold mb-6"></p>
+
+            <form id="orderForm" class="space-y-4">
+                <input type="hidden" id="orderedItem">
+                <div>
+                    <label class="block text-xs font-bold uppercase text-stone-500 mb-1">Serving Detail</label>
+                    <input type="text" placeholder="Table Number / Pickup Time" required
+                        class="w-full border p-3 rounded-xl focus:ring-2 focus:ring-orange-200 outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase text-stone-500 mb-1">Your Mobile</label>
+                    <input type="tel" placeholder="Phone Number" required
+                        class="w-full border p-3 rounded-xl focus:ring-2 focus:ring-orange-200 outline-none">
+                </div>
+                <button type="submit"
+                    class="w-full bg-orange-900 text-white py-4 rounded-xl font-bold hover:bg-stone-800 transition-all shadow-md mt-4">
+                    Confirm Order
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="cafe.js"></script>
+</body>
+
+</html>
