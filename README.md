@@ -12,7 +12,6 @@ Glassmorphism UI: Modern navigation design using backdrop-filter and Tailwind CS
 Responsive & Accessible: Fully optimized for mobile and desktop views with a smooth scroll experience.
 
 🛠️ Tech Stack
-
 Frontend: HTML5,JavaScript, Tailwind CSS.
 
 Interactivity: Vanilla JavaScript (DOM Manipulation & Event Handling).
