@@ -83,6 +83,5 @@
         function simulateDownload() {
             alert("Preparing your PDF menu... The download will begin shortly.");
         }
-
         // Initialize
         window.onload = renderMenu;
